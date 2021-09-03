@@ -11,7 +11,6 @@ namespace CollectionBoxWebApi.DataLayer.Repositories.Interfaces
         void DeleteUser(string id);
         void DeleteAllUsers();
         void SetLastLoginTime(ApplicationUser user);
-        void SetRegistrationDate(ApplicationUser user);
         void BlockUser(string id);
         void UnblockUser(string id);
         void BlockAllUsers();

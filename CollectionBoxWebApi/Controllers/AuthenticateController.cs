@@ -90,7 +90,7 @@ namespace CollectionBoxWebApi.Controllers
                 SecurityStamp = Guid.NewGuid().ToString(),
                 UserName = model.Username,
                 RegistrationDate = DateTime.Now,
-                UserBlock = false
+            UserBlock = false
             };
             var result = await _userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded)

@@ -7,7 +7,6 @@ using System.Collections.Generic;
 namespace CollectionBoxWebApi.Controllers
 {
     [Route("api/[controller]")]
-    //[Authorize(Roles = "User")]
     public class UserController : ControllerBase
     {
         private readonly IUserRepository _repository;
@@ -56,7 +55,6 @@ namespace CollectionBoxWebApi.Controllers
         }
 
         [HttpPost("{id}")]
-        //[Route("Block")]
         public IActionResult Block(string id)
         {
             try
@@ -72,7 +70,6 @@ namespace CollectionBoxWebApi.Controllers
         }
 
         [HttpPut("{id}")]
-        //[Route("Unblock")]
         public IActionResult Unblock(string id)
         {
             try

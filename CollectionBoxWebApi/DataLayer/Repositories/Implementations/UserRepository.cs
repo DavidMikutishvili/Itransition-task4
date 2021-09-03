@@ -61,12 +61,6 @@ namespace CollectionBoxWebApi.DataLayer.Repositories.Implementations
             _context.SaveChanges();
         }
 
-        public void SetRegistrationDate(ApplicationUser user) // until dont use
-        {
-            user.RegistrationDate = DateTime.Now;
-            _context.SaveChanges();
-        }
-
         public void UpdateUser(ApplicationUser user)
         {
             throw new System.NotImplementedException();
